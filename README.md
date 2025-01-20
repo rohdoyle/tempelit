@@ -200,7 +200,7 @@ To customize the app list or support List:
 ---
 
 ## Support & Custom Orders
-For custom templates or support, reach out to me on [Telegram](https://t.me/Mqtin).
+For custom templates or support, reach out to me on [Telegram]).
 
 <a href="https://nowpayments.io/donation?api_key=Z50AKDD-DHSMN86-P0DQ22X-1SQAFCA" target="_blank" rel="noreferrer noopener">
     <img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
