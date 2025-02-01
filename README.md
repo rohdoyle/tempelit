@@ -1,4 +1,4 @@
-# قالب اخنصاصی مرزبان و مرزنشین اورانوس | Ourenus
+# قالب اختصاصی مرزبان و مرزنشین اورانوس | Ourenus
 
 ## Desktop View
 <img width="1458" alt="image" src="https://github.com/user-attachments/assets/49983ceb-fefd-4a35-a488-4202dc7bd353">
