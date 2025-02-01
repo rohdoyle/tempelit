@@ -33,7 +33,7 @@
 ### مرزنشین
 
 ۱. **قالب رو با دستور زیر دانلود کنید**
-   ```sudo wget -N -P /var/lib/marzneshin/templates/subscription/ https://github.com/rohdoyle/tempelit/releases/latest/download/index.html
+   ```sudo wget -N -P 
    ```
 
 ۲. **دستورات زیر رو تو ترمینال سرورتون بزنید**
