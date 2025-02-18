@@ -15,7 +15,7 @@ import ArrowCircleDownIcon from "@mui/icons-material/ArrowCircleDown";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import PlayCircleFilledWhiteOutlinedIcon from "@mui/icons-material/PlayCircleFilledWhiteOutlined";
 import errorLogo from "../assets/vite.svg";
-import { Checklist } from "@mui/icons-material";
+import { AdUnits, Checklist } from "@mui/icons-material";
 import TutorialModal from "./TutorialModal";
 import AppleIcon from "@mui/icons-material/Apple";
 import AndroidIcon from "@mui/icons-material/Android";
@@ -50,7 +50,13 @@ const getButtonStyles = (type, theme) => {
         color: "#000",
       };
     default:
-      return {};
+      return {
+        backgroundColor:
+          theme === "dark"
+            ? "rgba(255, 87, 34, 0.5)"
+            : "rgba(255, 87, 34, 0.8)",
+        color: "#fff",
+      };
   }
 };
 
@@ -207,16 +213,24 @@ const renderAppAccordion = (
                 backgroundColor:
                   app?.price === "0"
                     ? theme.colors.apps.priceBtn.free.btn[theme.palette.mode]
+                    : app?.isAd
+                    ? theme.colors.apps.priceBtn.ad.btn[theme.palette.mode]
                     : theme.colors.apps.priceBtn.paid.btn[theme.palette.mode],
                 color:
                   app?.price === "0"
                     ? theme.colors.apps.priceBtn.free.text[theme.palette.mode]
+                    : app?.isAd
+                    ? theme.colors.apps.priceBtn.ad.text[theme.palette.mode]
                     : theme.colors.apps.priceBtn.paid.text[theme.palette.mode],
                 textTransform: "capitalize",
                 boxShadow: "0 0 3px 0px #99bbaf",
               }}
             >
-              {app.price === "0" ? t("free") : `${app.price} $`}
+              {app.price === "0"
+                ? t("free")
+                : app?.isAd
+                ? t("ad")
+                : `${app.price} $`}
             </Button>
           </Grid>
         </Grid>
@@ -227,9 +241,18 @@ const renderAppAccordion = (
             {lang === "fa" ? app.faDescription : app.description}
           </Typography>
           {app.downloadLink &&
+            !app?.isAd &&
             renderButtonGrid(
               <ArrowCircleDownIcon fontSize="medium" />,
               "download",
+              theme,
+              t,
+              app.downloadLink
+            )}
+          {app?.isAd &&
+            renderButtonGrid(
+              <AdUnits fontSize="medium" />,
+              app.adBtnText,
               theme,
               t,
               app.downloadLink

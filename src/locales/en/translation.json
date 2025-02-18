@@ -22,7 +22,7 @@
   "operatingSystems": "Operating Systems",
   "configuration": "Add to App",
   "download": "Download",
-  "watchVideo": "Watch Tutorial Video",
+  "watchVideo": "App Tutorial",
   "configsList": "Configs List",
   "emergancyList": "Emergancy Configs",
   "linkCopied": "Link Copied",
@@ -42,5 +42,7 @@
   "free": "Free",
   "light": "Light",
   "dark": "Dark",
-  "ended": "Ended"
+  "ended": "Ended",
+  "tutorialTitle": "Tutorial",
+  "ad": "Ad"
 }

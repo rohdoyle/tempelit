@@ -37,7 +37,7 @@ jobs:
       - name: Create GitHub tag
         id: create_tag
         run: |
-          TAG_NAME="v0.9.4.${{ github.run_number }}"
+          TAG_NAME="v0.9.5.${{ github.run_number }}"
           git tag $TAG_NAME
           git push origin $TAG_NAME
           echo "::set-output name=tag_name::$TAG_NAME"

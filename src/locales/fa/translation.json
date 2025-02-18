@@ -22,7 +22,7 @@
   "operatingSystems": "انتخاب سیستم عامل",
   "configuration": "افرودن به برنامه",
   "download": "دانلود",
-  "watchVideo": "تماشای ویدیو آموزش",
+  "watchVideo": "آموزش برنامه",
   "configsList": "همه پروکسی ها",
   "emergancyList": "کانفیگ های اضطراری",
   "linkCopied": "لینک کپی شد",
@@ -42,5 +42,7 @@
   "free": "رایگان",
   "light": "روشن",
   "dark": "تیره",
-  "ended": "پایان یافته"
+  "ended": "پایان یافته",
+  "tutorialTitle": "آموزش",
+  "ad": "تبلیغات"
 }

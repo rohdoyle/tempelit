@@ -79,7 +79,7 @@ const TutorialModal = ({ open, handleClose, data }) => {
           <Typography>{t("noTutorial")}</Typography>
         )}
 
-        {data?.videoLink ? (
+        {data?.videoLink && (
           <iframe
             width="100%"
             height="315"
@@ -88,8 +88,6 @@ const TutorialModal = ({ open, handleClose, data }) => {
             frameBorder="0"
             allowFullScreen
           />
-        ) : (
-          <Typography>{t("noVideo")}</Typography>
         )}
       </DialogContent>
     </Dialog>

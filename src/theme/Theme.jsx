@@ -67,6 +67,13 @@ const colors = {
         },
         text: { dark: commonColors.white, light: commonColors.white },
       },
+      ad: {
+        btn: {
+          dark: "rgba(255, 255, 255, 0.65)",
+          light: "rgba(255, 255, 255, 0.65)",
+        },
+        text: { dark: commonColors.black, light: commonColors.black },
+      },
     },
   },
   configs: {

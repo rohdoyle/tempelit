@@ -23,7 +23,7 @@
   "operatingSystems": "Операционные системы",
   "configuration": "Добавить в приложение",
   "download": "Скачать",
-  "watchVideo": "Посмотреть туториал",
+  "watchVideo": "Видео-инструкция",
   "configsList": "Список конфигов",
   "emergancyList": "Emergancy конфиги",
   "linkCopied": "Ссылка скопирована",
@@ -43,5 +43,7 @@
   "free": "Бесплатно",
   "light": "Светлая",
   "dark": "Темная",
-  "ended": "Закончилась"
+  "ended": "Закончилась",
+  "tutorialTitle": "Обучение",
+  "ad": "Реклама"
 }

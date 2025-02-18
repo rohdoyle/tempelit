@@ -36,12 +36,20 @@ export const extractNameFromConfigURL = (url) => {
   const namePattern = /#([^#]*)/;
   const match = url.match(namePattern);
 
-  if (match) return decodeURIComponent(match[1]);
+  if (match) {
+    try {
+      return decodeURIComponent(match[1]);
+    } catch (error) {
+      console.error("Malformed URI component:", match[1], error);
+      return match[1];
+    }
+  }
 
   if (url.startsWith("vmess://")) {
     const encodedString = url.replace("vmess://", "");
-    const decodedString = atob(encodedString);
+
     try {
+      const decodedString = atob(encodedString);
       return JSON.parse(decodedString).ps;
     } catch (error) {
       console.error("Invalid vmess URL format:", error);
